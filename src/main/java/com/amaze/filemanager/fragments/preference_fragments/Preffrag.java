@@ -36,7 +36,7 @@ import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.amaze.filemanager.BuildConfig;
+//import com.amaze.filemanager.BuildConfig;
 import com.amaze.filemanager.R;
 import com.amaze.filemanager.activities.AboutActivity;
 import com.amaze.filemanager.activities.BaseActivity;
@@ -185,8 +185,8 @@ public class Preffrag extends PreferenceFragment{
                 return false;
             }
         });
-        if (BuildConfig.IS_VERSION_FDROID)
-            gplus.setEnabled(false);
+        // if (BuildConfig.IS_VERSION_FDROID)
+        //     gplus.setEnabled(false);
 
         // Colored navigation bar
     }
