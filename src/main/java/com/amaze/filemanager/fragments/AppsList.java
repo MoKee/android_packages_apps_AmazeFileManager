@@ -205,6 +205,13 @@ public class AppsList extends ListFragment {
                 a = new ArrayList<>();
                 c = new ArrayList<>();
                 for (PackageInfo object : all_apps) {
+                    Bundle metaData = object.applicationInfo.metaData;
+                    if (metaData != null) {
+                        if (metaData.getString("Substratum_Parent") != null ||
+                                metaData.getString("Substratum_IconPack") != null) {
+                            continue;
+                        }
+                    }
                     File f=new File(object.applicationInfo.publicSourceDir);
 
                     a.add(new Layoutelements(new BitmapDrawable(getActivity().getResources(),
