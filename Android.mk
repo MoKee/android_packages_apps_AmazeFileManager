@@ -22,7 +22,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_PACKAGE_NAME := AmazeFileManager
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := mokee
 LOCAL_MODULE_TAGS := optional
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
@@ -34,6 +34,8 @@ ifneq ($(INCREMENTAL_BUILDS),)
 endif
 
 LOCAL_MANIFEST_FILE := src/main/AndroidManifest.xml
+LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/src/play/AndroidManifest.xml
+
 LOCAL_SRC_FILES := $(call all-java-files-under, src/main)
 LOCAL_SRC_FILES += $(call all-java-files-under, src/play)
 LOCAL_SRC_FILES += $(call all-java-files-under, libs/StickyHeadersRecyclerView/src/main)
