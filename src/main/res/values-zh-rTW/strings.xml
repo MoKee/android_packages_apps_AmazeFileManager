@@ -494,6 +494,9 @@
   <string name="processing_file">正在處理檔案</string>
   <string name="current_speed">目前速度</string>
   <string name="smb_launch_error">您將需要將此檔案複製到儲存空間並開啟</string>
+  <string name="error_file_not_found">錯誤：找不到檔案</string>
+  <string name="error_io">I/O 錯誤</string>
+  <string name="error_root_not_permitted">錯誤︰未授予 Root 權限</string>
   <string name="medium_text">中號字體</string>
   <string name="tap_and_hold_tips">長按檔案或資料夾，顯示更多選項</string>
   <string name="permission_read">已讀</string>
