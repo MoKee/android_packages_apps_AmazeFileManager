@@ -309,7 +309,7 @@
   <string name="sd_card_grant_next">sd_card_grant_next</string>
   <string name="sd_card_grant_first">sd_card_grant_first</string>
   <string name="fab_skin">FAB 外觀</string>
-  <string name="gplus_pic_title">與 G+ 簽到</string>
+  <string name="gplus_pic_title">登入至 G+</string>
   <string name="gplus_pic_summary">在清單中顯示 G+ 封面圖片</string>
   <string name="icon_credits">圖形由 &lt;a href=\"http://cookicons.co/\"&gt;CookIcons&lt;/a&gt;</string>
   <string name="color_title">顏色</string>
@@ -422,7 +422,44 @@
   <string name="use_custom_ip">使用自訂的 IP</string>
   <string name="bookmark_lost">找不到，重新建立書籤......</string>
   <string name="smb_instructions">
-<html><body><center>\n<h1>如何存取共用 windows 資料夾上的 android (smb)</h1>\n</center> \n <ol>\n <li>\n <b>啟用檔案共用</b> \n <br/> 開啟控制台，點選選擇家用群組和共用選項下網路和網際網怒，並按一下更改進階共用設定。啟用檔案和印表機共用功能 \n</li> <br/> <li/> <b>其他檔案共用設定</b> <br/> 您可能還想配置其他例如進階共用設定這裡 \n，您可以啟用存取您無需密碼的檔案，如果您相信在您的本地網路上的所有裝置。一旦啟用了檔案和印表機共用，則可以開啟檔案資源管理器或 Windows 檔案總管中，按右鍵您想要共用的資料夾並選擇屬性。\n 按一下共用按鈕，使此資料夾可在 \n 網路。 <li><li/> <br/> <b>確保兩個裝置都在相同的 Wi-Fi</b> <br/> \n 此功能使檔可用在本地網路上，因此您的 PC 和行動裝置必須具有相同的本地網路上。您無法無法訪問共用的 Windows 資料夾透過網際網路或您的智慧手機連線至其行動數據時 — — 已連線至 Wi-Fi。</li><li>\n <br/><b>尋找 IP 位址</b> \n <br/> 開啟命令提示字元。輸入 ipconfig，然後按 enter 鍵。尋找根據您為您的路由器的 IP 位址的網路介面卡的預設閘道。尋找 "IPv4 Address" 相同的配接器部分，以查找您的電腦的 IP 位址下。</li> <li/> <br/>\n <b>在 smb 對話方塊中輸入詳細資訊</b> \n <br/> \n</ol> \n</body> \n</html>    </string>
+<html>
+            <body>
+                <h1>如何存取共用的 windows 資料夾上的 android (smb)</h1>\n\n
+                <ul>
+                    <li>
+                        <b>啟用檔案共用</b>\n
+                    </li>
+                    <p style="margin-left: 40px">
+                        開啟「控制台」，按一下選擇 [網路和網際網路] 選項下的 [選擇家用群組和共用選項]，然後按一下 [變更進階共用設定]，再點選 [啟用檔案和印表機共用] 的功能。\n\n
+                    </p>
+
+                    <li>
+                        <b>附加檔案共用設定</b>\n
+                    </li>
+                    <p style="margin-left: 40px">
+                       您還可以在此處配置其他進階共用設定。 \n
+                       例如，如果您信任本地網路上的所有裝置，您可以啟用對沒有密碼的檔案進行存取。 [啟用檔案和印表機共用] 之後，您可以開啟「檔案資源管理員」或「Windows 檔案總管」，按下右鍵您想要共用的資料夾並選擇 [屬性]。 \n
+                       按一下 [共用] 按鈕，使此資料夾可在網路上使用。\n\n
+                        </p>
+
+                    <li>
+                        <b>請確保兩個裝置都在相同的 Wi-Fi 上</b>\n
+                    </li>
+                    <p style="margin-left: 40px">
+                        此功能使檔案可在本機網路上使用，因此您的 PC 和行動裝置必須在同一本地網路上。您無法透過網際網路存取共用的 Windows 資料夾，或者當智慧手機連線至行動數據時 — — 也必須連線至 Wi-Fi。\n\n
+                    </p>
+
+                    <li>
+                        <b>尋找 IP 位址</b>\n
+                    </li>
+                    <p style="margin-left: 40px">
+						開啟「命令提示字元」。輸入「ipconfig」，然後按 [Enter] 鍵。尋找根據您為您的路由器的 IP 位址的網路介面卡的預設閘道。尋找「\\"IPv4 Address\\" 」同一款配接器以尋找您的電腦的 IP 位址。\n\n
+                    </p>
+
+                    <b>在 smb 對話方塊中輸入詳細資訊</b>\n
+                </ul>
+            </body>
+        </html>    </string>
   <string name="share_limit">無法分享超過 100 個檔案</string>
   <string name="otg_access">選擇 OTG 裝置的根目錄。</string>
   <string name="no_profile_pic">沒有 G+ 的個人資料圖片</string>
