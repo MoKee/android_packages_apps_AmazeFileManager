@@ -296,7 +296,7 @@
   <string name="fab_skin">Tema del botón flotante</string>
   <string name="gplus_pic_title">Identificarse con G+</string>
   <string name="gplus_pic_summary">Mostrar la foto de portada de G+ en el panel lateral</string>
-  <string name="icon_credits">Gráficos por <a href="http://cookicons.co/">CookIcons</string>
+  <string name="icon_credits">Graphics by &lt;a href="http://cookicons.co/"&gt;CookIcons&lt;/a&gt;</string>
   <string name="color_summary">Establecer el color de varios componentes gráficos</string>
   <string name="primary_color_title">Color principal</string>
   <string name="primary_color_summary">Establecer color para grande elementos gráficos</string>
