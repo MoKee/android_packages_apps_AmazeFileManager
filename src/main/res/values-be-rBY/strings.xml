@@ -22,6 +22,7 @@
   <string name="drawer_open">Адкрыць панэль</string>
   <string name="drawer_close">Зачыніць панель</string>
   <string name="books">Закладкі</string>
+  <string name="storage">Сховішча</string>
   <string name="gallery">Галерэя</string>
   <string name="setting">Настройкі</string>
   <string name="cancel">АДМЕНА</string>
@@ -64,6 +65,7 @@
   <string name="archive">Архіў</string>
   <string name="details">Звесткі</string>
   <string name="donate">Ахвяраваць</string>
+  <string name="text">Тэкст</string>
   <string name="other">Іншы</string>
   <string name="color_title">Колер</string>
   <string name="none">Нічога</string>
@@ -90,6 +92,7 @@
   <string name="height">Вышыня</string>
   <string name="exposure_time">Вытрымка</string>
   <string name="focal_length">Фокусная адлегласць</string>
+  <string name="document">Дакумент</string>
   <!-- reference to a document file -->
   <!-- %s will be replaced with either copied or moved -->
   <!-- reference to - 'Written #bytes out of #bytes' in process viewer -->
