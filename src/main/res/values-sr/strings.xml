@@ -19,7 +19,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Амејз менаџер фајлова</string>
   <string name="drawer_open">Отвори фиоку навигације</string>
   <string name="drawer_close">Затвори фиоку навигације</string>
   <string name="books">Обележивачи</string>
@@ -429,4 +428,5 @@
   <!-- reference to - 'Processing file # of #' in process viewer -->
   <string name="tap_and_hold_tips">Тапните и држите фајл или фасциклу за више могућности</string>
   <string name="permission_other">Друго</string>
+  <string name="clipboard_path_copy">Путања копирана на клипборд</string>
 </resources>

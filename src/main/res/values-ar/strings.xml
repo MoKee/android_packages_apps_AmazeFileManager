@@ -295,4 +295,5 @@
   <!-- reference to - 'Processing file # of #' in process viewer -->
   <string name="tap_and_hold_tips">اضغط مطولًا على الملف أو المجلد لإظهار المزيد من الخيارات</string>
   <string name="permission_other">آخرى</string>
+  <string name="clipboard_path_copy">تم نسخ المسار إلى الحافظة</string>
 </resources>

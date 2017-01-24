@@ -412,4 +412,5 @@ rund um die Entwicklung</string>
   <string name="tap_and_hold_tips">Tippe und halte Datei für mehr Optionen</string>
   <string name="permission_read">Lesen</string>
   <string name="permission_other">Sonstige</string>
+  <string name="clipboard_path_copy">Pfad in Zwischenspeicher kopiert</string>
 </resources>

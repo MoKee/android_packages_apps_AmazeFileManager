@@ -19,7 +19,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Xestor de ficheros Amaze</string>
   <string name="drawer_open">Abrir caxón de navegación</string>
   <string name="drawer_close">Zarrar caxón de navegación</string>
   <string name="books">Marcadores</string>
@@ -449,4 +448,5 @@ to ordenador.</li><li/><br/>\\n
   <!-- reference to - 'Written #bytes out of #bytes' in process viewer -->
   <!-- reference to - 'Processing file # of #' in process viewer -->
   <string name="tap_and_hold_tips">Calca y ten primío nun ficheru o carpeta pa más opciones</string>
+  <string name="clipboard_path_copy">El camín copióse al cartafueyu</string>
 </resources>

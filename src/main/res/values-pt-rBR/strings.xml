@@ -19,7 +19,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Gerenciador de Arquivos Amaze</string>
   <string name="drawer_open">Abrir menu de navegação</string>
   <string name="drawer_close">Fechar menu de navegação</string>
   <string name="books">Favoritos</string>
@@ -527,6 +526,9 @@
   <string name="processing_file">Processamento de arquivo</string>
   <string name="current_speed">Velocidade atual</string>
   <string name="smb_launch_error">Você precisará copiar este arquivo para armazenamento para abri-lo</string>
+  <string name="error_file_not_found">Erro! Arquivo não encontrado</string>
+  <string name="error_io">Erro I/O</string>
+  <string name="error_root_not_permitted">Erro: Raiz permissão não concedida</string>
   <string name="medium_text">Texto Médio</string>
   <string name="tap_and_hold_tips">Toque longo num arquivo ou pasta para mais opções</string>
   <string name="permission_read">Lidas</string>
@@ -535,4 +537,5 @@
   <string name="permission_owner">Proprietário</string>
   <string name="permission_group">Grupo</string>
   <string name="permission_other">Outro</string>
+  <string name="clipboard_path_copy">Caminho copiado para a área de transferência</string>
 </resources>

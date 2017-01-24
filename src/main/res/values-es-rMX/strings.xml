@@ -19,7 +19,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Panel de navegación de ejemplo</string>
   <string name="drawer_open">Abra el cajón navegación</string>
   <string name="drawer_close">Cierre el cajón navegación</string>
   <string name="icon">icono</string>
@@ -405,4 +404,5 @@
   <string name="tap_and_hold_tips">Mantenga pulsado un archivo o carpeta para más opciones</string>
   <string name="permission_read">Leido</string>
   <string name="permission_other">Otro</string>
+  <string name="clipboard_path_copy">Ruta copiada al portapapeles</string>
 </resources>

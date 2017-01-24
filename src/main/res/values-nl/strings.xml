@@ -19,7 +19,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Amaze-bestandsbeheerder</string>
   <string name="drawer_open">Navigatielade openen</string>
   <string name="drawer_close">Navigatielade sluiten</string>
   <string name="books">Bladwijzers</string>
@@ -395,4 +394,5 @@
   <string name="tap_and_hold_tips">Druk en houd een bestand of map ingedrukt voor meer opties</string>
   <string name="permission_read">Lezen</string>
   <string name="permission_other">Anders</string>
+  <string name="clipboard_path_copy">Pad gekopieerd naar klembord</string>
 </resources>

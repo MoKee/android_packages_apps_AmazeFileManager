@@ -448,4 +448,5 @@
   <string name="tap_and_hold_tips">Appuyer et maintenir sur un fichier ou dossier pour plus d\'options</string>
   <string name="permission_read">Lire</string>
   <string name="permission_other">Autres</string>
+  <string name="clipboard_path_copy">Répertorie copié dans le presse-papier</string>
 </resources>

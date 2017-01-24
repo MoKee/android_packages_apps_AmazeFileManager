@@ -19,7 +19,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Amaze Dosya Yöneticisi</string>
   <string name="drawer_open">Gezinme çekmecesini aç</string>
   <string name="drawer_close">Gezinme çekmecesini kapat</string>
   <string name="books">Yer imleri</string>
@@ -409,4 +408,5 @@ tartışmalarının parçası olun</string>
   <string name="tap_and_hold_tips">Daha fazla seçenek için dosya veya klasörün üzerine basılı tutun</string>
   <string name="permission_read">Oku</string>
   <string name="permission_other">Diğer</string>
+  <string name="clipboard_path_copy">Yol panoya kopyalandı</string>
 </resources>

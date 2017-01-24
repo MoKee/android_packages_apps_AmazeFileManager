@@ -19,7 +19,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Amaze 文件管理器</string>
+  <string name="app_name">文件管理器</string>
   <string name="drawer_open">打开导航抽屉</string>
   <string name="drawer_close">关闭导航抽屉</string>
   <string name="books">书签</string>
@@ -66,7 +66,7 @@
   <string name="name">名称</string>
   <string name="date">时间戳</string>
   <string name="location">路径</string>
-  <string name="size">大小：</string>
+  <string name="size">大小</string>
   <string name="totalitems">文件数</string>
   <string name="enterzipname">请输入 ZIP 文件名</string>
   <string name="noappfound">无法找到可以打开此文件的应用</string>
@@ -116,7 +116,7 @@
   <string name="history">历史记录</string>
   <string name="refresh">刷新</string>
   <string name="copy">复制</string>
-  <string name="rootmode">Root 工具箱</string>
+  <string name="rootmode">根目录浏览</string>
   <string name="rootmodesummary">仅供已获取 Root 权限的设备使用</string>
   <string name="mountsystemsummary">如果您想修改系统文件请启用此选项</string>
   <string name="mountsystem">挂载 System 分区为可读写</string>
@@ -304,7 +304,7 @@
   <string name="tables">表格</string>
   <string name="database">数据库</string>
   <string name="colourednavigation">导航栏变色</string>
-  <string name="colourednavigationsum">设置导航栏是否跟随皮肤颜色变色</string>
+  <string name="colourednavigationsum">动态调整导航栏以适应皮肤颜色</string>
   <string name="sd_card_grant_next">SD卡授权下一个</string>
   <string name="sd_card_grant_first">SD卡授权第一个</string>
   <string name="fab_skin">浮动操作按钮颜色</string>
@@ -315,7 +315,7 @@
   <string name="color_summary">为各种界面组件设置颜色</string>
   <string name="primary_color_title">主色调（左侧面板）</string>
   <string name="primary_color_summary">设置左侧面板大部分控件的颜色</string>
-  <string name="accent_color_title">反差色</string>
+  <string name="accent_color_title">强调色</string>
   <string name="accent_color_summary">为浮动操作按钮以及其他控件设置颜色</string>
   <string name="icon_color_title">图标颜色</string>
   <string name="icon_color_summary">为图标设置颜色</string>
@@ -407,7 +407,7 @@
   <string name="ftp_port_change_error_invalid">选定的端口号无效</string>
   <string name="primary_two_title">主色调（右侧面板）</string>
   <string name="primary_two_summary">设置右侧面板大部分控件的颜色</string>
-  <string name="g_plus">Google+</string>
+  <string name="g_plus">Google +</string>
   <string name="support_development">协助开发</string>
   <string name="report_bugs_title">反馈问题</string>
   <string name="report_bugs_summary">反馈问题或提交新功能需求</string>
@@ -511,4 +511,7 @@
   <string name="permission_owner">所有者</string>
   <string name="permission_group">用户组</string>
   <string name="permission_other">其他</string>
+  <string name="clipboard_path_copy">路径已复制到剪贴板</string>
+  <string name="error_busybox">无法找到 Busybox 。请关闭交互式 shell。</string>
+  <string name="service_timer">用时</string>
 </resources>

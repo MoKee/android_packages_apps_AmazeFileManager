@@ -19,7 +19,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Amaze ファイルマネージャー</string>
   <string name="drawer_open">ナビゲーションドロワーを開く</string>
   <string name="drawer_close">ナビゲーションドロワーを閉じる</string>
   <string name="books">ブックマーク</string>
@@ -463,4 +462,5 @@ Wi-Fiに接続する必要があります。</li><li>\\n
   <!-- reference to - 'Processing file # of #' in process viewer -->
   <string name="tap_and_hold_tips">ファイルまたはフォルダーを長押しすると追加のオプション</string>
   <string name="permission_other">その他</string>
+  <string name="clipboard_path_copy">パスをクリップボードにコピーしました</string>
 </resources>

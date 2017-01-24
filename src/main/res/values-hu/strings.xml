@@ -464,4 +464,5 @@ megtalálásához..</li><li/><br/>\\n
   <string name="tap_and_hold_tips">Érintse meg és tartsa nyomva a fájlt vagy mappát további lehetőségek eléréséhez</string>
   <string name="permission_read">Elolvas</string>
   <string name="permission_other">Egyéb</string>
+  <string name="clipboard_path_copy">Az útvonal a vágólapra került</string>
 </resources>

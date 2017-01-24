@@ -19,7 +19,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Amaze bylų tvarkyklė</string>
   <string name="drawer_open">Atidaryti navigacijos stalčių</string>
   <string name="drawer_close">Uždaryti navigacijos stalčių</string>
   <string name="books">Žymos</string>
@@ -243,4 +242,5 @@
   <!-- reference to - 'Processing file # of #' in process viewer -->
   <string name="tap_and_hold_tips">Paliesti ir laikyti failą ar aplankalą dėl daugiau parinkčių</string>
   <string name="permission_other">Kita</string>
+  <string name="clipboard_path_copy">Kelias nukopijuotas į iškarpinę</string>
 </resources>

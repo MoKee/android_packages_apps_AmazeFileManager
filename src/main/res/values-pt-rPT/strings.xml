@@ -418,4 +418,5 @@ debater ideias com os programadores</string>
   <!-- reference to - 'Processing file # of #' in process viewer -->
   <string name="tap_and_hold_tips">Toque longo no ficheiro ou pasta para mais opções</string>
   <string name="permission_other">Outro</string>
+  <string name="clipboard_path_copy">Caminho copiado para a área de transferência</string>
 </resources>

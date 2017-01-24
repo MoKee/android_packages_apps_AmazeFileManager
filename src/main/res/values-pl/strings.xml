@@ -19,7 +19,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Menedżer plików Amaze</string>
+  <string name="app_name">Zadziwia</string>
   <string name="drawer_open">Otwórz pasek nawigacji</string>
   <string name="drawer_close">Zamknij pasek nawigacji</string>
   <string name="books">Zakładki</string>
@@ -40,27 +40,28 @@
   <string name="properties">Właściwości</string>
   <string name="copyingapk">Kopiowanie aplikacji do </string>
   <string name="addbook">Dodaj zakładkę</string>
+  <string name="delbook">Usuń zakładkę</string>
   <string name="addtobook">Dodaj do zakładek</string>
-  <string name="enterpath">Proszę wprowadzić ścieżkę</string>
-  <string name="cancel">ANULUJ</string>
-  <string name="create">UTWÓRZ</string>
-  <string name="success">Powodzenie</string>
+  <string name="enterpath">Wprowadź ścieżkę</string>
+  <string name="cancel">Anuluj</string>
+  <string name="create">Utwórz</string>
+  <string name="success">Zapisano</string>
   <string name="filenotexists">Plik nie istnieje</string>
   <string name="loading">Wczytywanie&#8230;</string>
   <string name="file_empty">Plik jest pusty</string>
   <string name="error">Błąd</string>
-  <string name="cantlistfiles">Nie można wyświetlić plików bez uprawnień root\'a</string>
+  <string name="cantlistfiles">Nie można wyświetlić plików bez uprawnień roota</string>
   <string name="searchresults">Wyniki wyszukiwania</string>
   <string name="itemsselected">Wybrane elementy</string>
-  <string name="newhomedirectory">Nowy katalog domowy</string>
+  <string name="newhomedirectory">Nowy katalog wewnętrzny</string>
   <string name="rename">Zmień nazwę</string>
   <string name="save">Zapisz</string>
-  <string name="renameerror">Nieudane zmienianie nazwy</string>
+  <string name="renameerror">Nieudana zmiana nazwy</string>
   <string name="renamed">Zmieniono nazwę</string>
   <string name="bookmarksadded">Dodano zakładki</string>
   <string name="fileexist">Istnieje już plik o takiej nazwie </string>
   <string name="filecreated">Utworzono plik</string>
-  <string name="searchpath">Szukaj ścieżki</string>
+  <string name="searchpath">Szukaj ścieżkę</string>
   <string name="enterfile">Proszę wprowadzić nazwę pliku</string>
   <string name="name">Nazwa: </string>
   <string name="date">Data: </string>
@@ -156,6 +157,7 @@
   <string name="brown">Brązowy</string>
   <string name="black">Czarny</string>
   <string name="blue_grey">Niebiesko-szary</string>
+  <string name="supersu">SuperSU</string>
   <!--DirectorySortMode-->
   <string name="foldersOnTop">Katalogi na górze</string>
   <string name="filesOnTop">Pliki na górze</string>
@@ -235,6 +237,7 @@
   <string name="hiddenfiles">Ukryte pliki</string>
   <string name="type">Typ</string>
   <string name="typeDesc">Typ (opis)</string>
+  <string name="rootdirectory">Root</string>
   <string name="new_string">Nowy</string>
   <string name="setringtone">Ustaw jako dzwonek</string>
   <string name="copy_path">Skopiuj ścieżkę</string>
@@ -276,6 +279,7 @@
   <string name="vietnamese_translation_title">Wietnamski</string>
   <string name="japanese_translation_title">Japoński</string>
   <string name="brazilian_portuguese_translation_title">Brazylijski portugalski</string>
+  <string name="tamil_translation_title">tamilski</string>
   <string name="zip_viewer">Przeglądarka archiwum</string>
   <string name="unin_system_apk">To jest aplikacja systemowa, usunięcie jej może spowodować niestabilność systemu.\\nKontynuować?</string>
   <string name="warning">Ostrzeżenie</string>
@@ -301,6 +305,8 @@
   <string name="database">Baza danych</string>
   <string name="colourednavigation">Kolorowy pasek nawigacji</string>
   <string name="colourednavigationsum">Koloruje pasek nawigacji zgodnie z kolorystyką aplikacji</string>
+  <string name="sd_card_grant_next">sd_card_grant_next</string>
+  <string name="sd_card_grant_first">sd_card_grant_first</string>
   <string name="fab_skin">Skórka FAB</string>
   <string name="gplus_pic_title">Logowanie z G+</string>
   <string name="gplus_pic_summary">Wyświetla obraz G+ w szufladzie</string>
@@ -396,8 +402,12 @@
   <string name="ftp_notif_title">Serwer Amaze FTP jest uruchomiony</string>
   <string name="ftp_notif_text">pod adresem: %s</string>
   <string name="ftp_notif_stop_server">ZATRZYMAJ</string>
+  <string name="ftp_port_edit_menu_title">Wybierz port FTP</string>
+  <string name="ftp_port_change_success">Port FTP został zmieniony</string>
+  <string name="ftp_port_change_error_invalid">Nieprawidłowy numer portu</string>
   <string name="primary_two_title">Kolor główny (prawa karta)</string>
   <string name="primary_two_summary">Ustala kolor dużych elementów interfejsu prawej karty</string>
+  <string name="g_plus">Google Plus</string>
   <string name="support_development">Wspomóż rozwój</string>
   <string name="report_bugs_title">Zgłoś błąd</string>
   <string name="report_bugs_summary">Umożliwia zgłoszenie błędu lub zaproponowanie nowej funkcjonalności</string>
@@ -409,22 +419,103 @@
   <string name="searchingdevices">Szukanie urządzeń</string>
   <string name="use_custom_ip">Własne IP</string>
   <string name="bookmark_lost">Nie odnaleziono zakładki, ponowne tworzenie&#8230;</string>
+  <string name="smb_instructions">
+        <html>
+            <body>
+                <h1>Jak uzyskać dostęp na Androidzie do folderu udostępnionego w Windows</h1>\n\n
+                <ul>
+                    <li>
+                        <b>Włącz "Udostępnianie plików"</b>\n
+                    </li>
+                    <p style="margin-left: 40px">
+                        Otwórz Panel sterowania, kliknij \"Wybierz grupę domową\" i opcje udostępniania przez Internet, a potem kliknij \"Zmień zaawansowane opcje udostępniania. Włącz plik i uruchom funkcję udostępniania drukarki.\n\n
+                    </p>
+
+                    <li>
+                        <b>Dodatkowe ustawienia udostępnianych plików</b>\n
+                    </li>
+                    <p style="margin-left: 40px">
+                        Możesz tutaj skonfigurować również inne zaawansowane opcje udostępniania. \n Na przykład możesz zezwolić na dostęp do twoich plików bez podawania hasła, jeżeli rozpoznajesz wszystkie urządzenia w sieci lokalnej. Gdy udostępnianie plików i drukarek jest włączone, otwórz Eksplorator plików lub Eksplorator Windows, kliknij prawym przyciskiem myszy na folder, który chcesz udostępnić, i wybierz \"Właściwości\". \n
+                        Kliknij przycisk \"Udostępnij\", aby folder był dostępny w sieci.\n\n
+                        </p>
+
+                    <li>
+                        <b>Upewnij się, że oba urządzenia są w tej samej sieci Wi-Fi</b>\n
+                    </li>
+                    <p style="margin-left: 40px">
+                        Dzięki temu pliki staną się dostępne w sieci lokalnej; twój komputer i urządzenie mobilne muszą pracować w tej samej sieci lokalnej. Nie możesz uzyskać dostępu do folderu Windows udostępnionego przez Internet albo gdy twój smartfon korzysta z niego za pośrednictwem łączności mobilnej. Musisz być połączony przez Wi-Fi.\n\n
+                    </p>
+
+                    <li>
+                        <b>Znajdź adres IP</b>\n
+                    </li>
+                    <p style="margin-left: 40px">
+                        Otwórz okno Wiersza poleceń. Wpisz \"ipconfig\" i naciśnij Enter. Sprawdź domyślną bramkę zgodną z twoją kartą sieciową dla adresu IP rutera. Szukaj \"Adres IPv4\" w tej samej sekcji karty, aby znaleźć adres IP komputera.\n\n
+                    </p>
+
+                    <b>Wpisz szczegóły w oknie dialogowym</b>\n
+                </ul>
+            </body>
+        </html>
+    
+ 
+smb_instructions
+</string>
+  <string name="share_limit">Nie można udostępnić więcej niż 100 plików</string>
+  <string name="otg_access">Wybierz katalog główny urządzenia OTG</string>
+  <string name="no_profile_pic">Brak zdjęcia profilowego w Google Plus</string>
+  <string name="opening">Otwieranie...</string>
   <string name="information">Informacje</string>
   <!-- reference to file accessed date -->
+  <string name="accessed">Otwarte</string>
   <!-- reference to file modified date -->
+  <string name="modified">Zmodyfikowano</string>
   <string name="title">Tytuł</string>
+  <string name="artist">Wykonawca</string>
+  <string name="album">Album</string>
+  <string name="year">Rok</string>
   <string name="duration">Czas trwania</string>
+  <string name="comment">Komentarz</string>
   <!-- reference to audio/video file -->
+  <string name="container">Zasobnik</string>
+  <string name="codec">Kodek</string>
+  <string name="channels">Kanały</string>
+  <string name="sample_rate">Częstotliwość</string>
+  <string name="bitrate">Bitrate</string>
+  <string name="dimensions">Rozmiary</string>
+  <string name="frame_rate">Klatki na sekundę</string>
+  <string name="image_type">Typ obrazu</string>
   <string name="width">Szerokość</string>
   <string name="height">Wysokość</string>
+  <string name="date_modified">Data modyfikacji</string>
+  <string name="software">Oprogramowanie</string>
+  <string name="creator">Autor</string>
+  <string name="camera_brand">Marka aparatu</string>
+  <string name="camera_model">Model aparatu</string>
+  <string name="date_taken">Data wykonania</string>
   <string name="exposure_time">Czas ekspozycji</string>
+  <string name="aperture_value">Wartość przysłony</string>
+  <string name="image_iso">Indeks prędkości ISO</string>
+  <string name="flash_fired">Z lampą</string>
   <string name="focal_length">Ogniskowa</string>
   <string name="document">Dokument</string>
+  <string name="subject">Temat</string>
+  <string name="author">Autor</string>
+  <string name="keywords">Słowa kluczowe</string>
+  <string name="producer">Producent</string>
+  <string name="created">Utworzono</string>
+  <string name="format">Typ pliku</string>
+  <string name="pages">Liczba stron</string>
   <!-- reference to a document file -->
+  <string name="optimized">Zoptymalizowane</string>
+  <string name="security">Zabezpieczenia</string>
+  <string name="paper_size">Rozmiar papieru</string>
+  <string name="root_error">Błąd podczas uruchamiania interaktywnej powłoki głównej</string>
   <!-- %s will be replaced with either copied or moved -->
   <!-- reference to - 'Written #bytes out of #bytes' in process viewer -->
   <!-- reference to - 'Processing file # of #' in process viewer -->
   <string name="tap_and_hold_tips">Dotknij i przytrzymaj plik lub katalog, aby wyświetlić więcej opcji</string>
   <string name="permission_read">Czytaj</string>
   <string name="permission_other">Inny</string>
+  <string name="clipboard_path_copy">Skopiowano ścieżkę</string>
 </resources>

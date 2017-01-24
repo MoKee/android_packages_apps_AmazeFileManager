@@ -480,4 +480,5 @@ Tieni premuto un file od una cartella per altre opzioni
   <string name="permission_owner">Proprietario</string>
   <string name="permission_group">Gruppo</string>
   <string name="permission_other">Altro</string>
+  <string name="clipboard_path_copy">Percorso copiato</string>
 </resources>

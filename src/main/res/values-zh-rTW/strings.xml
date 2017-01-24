@@ -19,7 +19,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-  <string name="app_name">Amaze 檔案管理員</string>
+  <string name="app_name">Amaze</string>
   <string name="drawer_open">開啟導覽清單</string>
   <string name="drawer_close">關閉導覽清單</string>
   <string name="books">書籤</string>
@@ -541,4 +541,7 @@
   <string name="permission_owner">擁有者</string>
   <string name="permission_group">群組</string>
   <string name="permission_other">其他</string>
+  <string name="clipboard_path_copy">路徑已複製到剪貼簿</string>
+  <string name="error_busybox">Busybox 找不到。關閉互動式 shell。</string>
+  <string name="service_timer">已用時間</string>
 </resources>
