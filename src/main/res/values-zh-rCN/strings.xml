@@ -252,7 +252,7 @@
   <string name="archtext">这是一个压缩包文件，您要执行哪一项操作？</string>
   <string name="pitext">这是一个应用安装包，您要执行哪一项操作？</string>
   <string name="xda_title">XDA 论坛</string>
-  <string name="xda_summary">获取应用的问答及帮助</string>
+  <string name="xda_summary">寻求帮助或分享心得</string>
   <string name="invalid_dir">无效的目录</string>
   <string name="circularimages">对图像和视频使用圆形图标</string>
   <string name="circularicons">使用圆形图标</string>
@@ -382,7 +382,6 @@
   <string name="path">路径</string>
   <string name="renamebookmark">修改书签</string>
   <string name="cut">剪切</string>
-  <string name="empty"></string>
   <string name="search">搜索</string>
   <string name="invalid_name">无效名称</string>
   <string name="search_hint">请输入要搜索的内容</string>
@@ -413,7 +412,7 @@
   <string name="report_bugs_summary">反馈问题或提交新功能需求</string>
   <string name="translate_title">贡献翻译</string>
   <string name="translate_summary">前往 Amaze 本地化系统进行语言翻译</string>
-  <string name="g_plus_community_summary">参加 beta 版测试并讨论后续改进</string>
+  <string name="g_plus_community_summary">参与 beta 版测试并讨论后续改进</string>
   <string name="easter_egg_title">工作室模式</string>
   <string name="paypal_copy_message">Paypal ID 已复制至剪贴板</string>
   <string name="searchingdevices">正在搜索设备</string>

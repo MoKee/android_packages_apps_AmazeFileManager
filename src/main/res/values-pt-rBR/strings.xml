@@ -19,6 +19,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+  <string name="app_name">Amaze</string>
   <string name="drawer_open">Abrir menu de navegação</string>
   <string name="drawer_close">Fechar menu de navegação</string>
   <string name="books">Favoritos</string>
@@ -381,7 +382,6 @@
   <string name="path">Caminho</string>
   <string name="renamebookmark">Modificar favorito</string>
   <string name="cut">Recortar</string>
-  <string name="empty"></string>
   <string name="search">Procurar</string>
   <string name="invalid_name">Nome inválido</string>
   <string name="search_hint">Digite para procurar&#8230;</string>
@@ -538,4 +538,6 @@
   <string name="permission_group">Grupo</string>
   <string name="permission_other">Outro</string>
   <string name="clipboard_path_copy">Caminho copiado para a área de transferência</string>
+  <string name="error_busybox">Busybox não encontrado. Fechando o shell interativo.</string>
+  <string name="service_timer">Tempo decorrido</string>
 </resources>

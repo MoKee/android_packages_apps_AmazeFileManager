@@ -19,6 +19,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+  <string name="app_name">Чудесный</string>
   <string name="drawer_open">Открыть меню навигации</string>
   <string name="drawer_close">Закрыть меню навигации</string>
   <string name="books">Закладки</string>
@@ -115,6 +116,7 @@
   <string name="history">История</string>
   <string name="refresh">Обновить</string>
   <string name="copy">Копировать</string>
+  <string name="rootmode">Root Explorer</string>
   <string name="rootmodesummary">Только для устройств с root правами. Используйте только если уверены в своих действиях.</string>
   <string name="mountsystemsummary">Включите эту опцию, если хотите редактировать системные файлы</string>
   <string name="mountsystem">Монтировать системные папки с правом на запись</string>
@@ -134,6 +136,8 @@
   <string name="simple">Простой </string>
   <string name="card">Карточки</string>
   <!-- Theme -->
+  <string name="light">Материальный светлый</string>
+  <string name="dark">Материальный темный</string>
   <string name="daytime">Дневное время</string>
   <!--Skin-->
   <string name="red">Красный</string>
@@ -153,6 +157,7 @@
   <string name="brown">Коричневый</string>
   <string name="black">Чёрный</string>
   <string name="blue_grey">Серо-голубой</string>
+  <string name="supersu">Суперпользователь</string>
   <!--DirectorySortMode-->
   <string name="foldersOnTop">Папки наверху</string>
   <string name="filesOnTop">Файлы наверху</string>
@@ -232,6 +237,7 @@
   <string name="hiddenfiles">Скрытые файлы</string>
   <string name="type">Тип</string>
   <string name="typeDesc">Тип (по убыванию)</string>
+  <string name="rootdirectory">Рут</string>
   <string name="new_string">Новый</string>
   <string name="setringtone">Установить как рингтон</string>
   <string name="copy_path">Копировать путь</string>
@@ -372,7 +378,6 @@
   <string name="path">Путь</string>
   <string name="renamebookmark">Изменить закладку</string>
   <string name="cut">Вырезать</string>
-  <string name="empty"></string>
   <string name="search">Поиск</string>
   <string name="invalid_name">Неверное имя</string>
   <string name="search_hint">Введите для поиска&#8230;</string>
@@ -394,19 +399,31 @@
   <string name="ftp_notif_stop_server">СТОП</string>
   <string name="primary_two_title">Основной цвет (правая вкладка)</string>
   <string name="primary_two_summary">Установить цвет больших элементов UI для правой вкладки</string>
+  <string name="g_plus">Google +</string>
+  <string name="report_bugs_title">Сообщить об ошибках</string>
+  <string name="report_bugs_summary">Сообщить об ошибке или запросить новые возможности</string>
+  <string name="translate_title">Переводчик</string>
   <string name="searchingdevices">Поиск устройств</string>
   <string name="information">О фото</string>
   <!-- reference to file accessed date -->
   <!-- reference to file modified date -->
   <string name="title">Заголовок</string>
+  <string name="album">Альбом</string>
+  <string name="year">Год</string>
   <string name="duration">Длительность</string>
   <!-- reference to audio/video file -->
+  <string name="channels">Каналы</string>
   <string name="width">Ширина</string>
   <string name="height">Высота</string>
+  <string name="camera_brand">Бренд камеры</string>
+  <string name="camera_model">Модель камеры</string>
+  <string name="date_taken">Дата съёмки</string>
   <string name="exposure_time">Выдержка</string>
   <string name="focal_length">Фокусное расстояние</string>
   <string name="document">Документ</string>
   <!-- reference to a document file -->
+  <string name="optimized">Оптимизированно</string>
+  <string name="security">Безопастность</string>
   <!-- %s will be replaced with either copied or moved -->
   <!-- reference to - 'Written #bytes out of #bytes' in process viewer -->
   <!-- reference to - 'Processing file # of #' in process viewer -->
