@@ -33,6 +33,7 @@
   <string name="select">Seleziona elemento</string>
   <string name="pressagain">Premi di nuovo per uscire</string>
   <string name="open">Apri</string>
+  <string name="backup">Backup</string>
   <string name="uninstall">Disinstalla</string>
   <string name="play">Play Store</string>
   <string name="properties">Proprietà</string>
@@ -389,7 +390,6 @@ I cambiamenti saranno effettivi dopo il riavvio dell\'app
   <string name="path">Percorso</string>
   <string name="renamebookmark">Modifica segnalibro</string>
   <string name="cut">Taglia</string>
-  <string name="empty"></string>
   <string name="search">Cerca</string>
   <string name="invalid_name">Nome non valido</string>
   <string name="search_hint">Digita per cercare&#8230;</string>
@@ -446,21 +446,42 @@ relative allo sviluppo</string>
   <string name="channels">Canali</string>
   <string name="sample_rate">Frequenza Campionamento</string>
   <string name="bitrate">Bitrate</string>
+  <string name="dimensions">Dimensioni</string>
+  <string name="image_type">Tipo Immagine</string>
   <string name="width">Larghezza</string>
   <string name="height">Altezza</string>
+  <string name="software">Software</string>
+  <string name="creator">Autore</string>
+  <string name="camera_brand">Produttore Fotocamera</string>
+  <string name="camera_model">Modello Fotocamera</string>
+  <string name="date_taken">Data Scatto</string>
   <string name="exposure_time">Tempo esposizione</string>
+  <string name="aperture_value">Valore Apertura</string>
+  <string name="flash_fired">Flash Scattato</string>
   <string name="focal_length">Lunghezza focale</string>
   <string name="document">Documento</string>
+  <string name="subject">Soggetto</string>
+  <string name="author">Autore</string>
+  <string name="keywords">Parole chiave</string>
+  <string name="producer">Produttore</string>
+  <string name="created">Creato</string>
+  <string name="format">Formato</string>
+  <string name="pages">Numero di Pagine</string>
   <!-- reference to a document file -->
+  <string name="optimized">Ottimizzato</string>
+  <string name="security">Sicurezza</string>
   <string name="root_error">Errore nell\'avvio di una shell root interattiva</string>
   <!-- %s will be replaced with either copied or moved -->
   <string name="copy_error">Alcuni file non sono stati correttamente %s</string>
   <string name="copied">copiato</string>
   <string name="moved">spostato</string>
   <string name="process_chart_description">Stato</string>
+  <string name="copy_complete">Copia Completata</string>
+  <string name="move_complete">Spostamento Completato</string>
   <string name="waiting_title">Attendere</string>
   <string name="waiting_content">Attendi il completamento dell\'operazione</string>
   <string name="extract_complete">Estrazione completata</string>
+  <string name="compression_complete">Compressione Completata</string>
   <string name="compressing">Compressione</string>
   <string name="cancelled">Annullato</string>
   <!-- reference to - 'Written #bytes out of #bytes' in process viewer -->
@@ -470,6 +491,9 @@ relative allo sviluppo</string>
   <string name="processing_file">Elaborazione file</string>
   <string name="current_speed">Velocità Corrente</string>
   <string name="smb_launch_error">Sarà necessario copiare questo file nella memoria per aprirlo</string>
+  <string name="error_file_not_found">Errore: File Non Trovato</string>
+  <string name="error_io">Errore I/O</string>
+  <string name="error_root_not_permitted">Errore: Permessi di root non concessi</string>
   <string name="medium_text">Testo Medio</string>
   <string name="tap_and_hold_tips">
 Tieni premuto un file od una cartella per altre opzioni
@@ -481,4 +505,6 @@ Tieni premuto un file od una cartella per altre opzioni
   <string name="permission_group">Gruppo</string>
   <string name="permission_other">Altro</string>
   <string name="clipboard_path_copy">Percorso copiato</string>
+  <string name="error_busybox">Busybox non trovato. Chiusura shell interattiva.</string>
+  <string name="service_timer">Tempo Trascorso</string>
 </resources>
