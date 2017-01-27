@@ -73,7 +73,7 @@
   <string name="copying">Капіяванне</string>
   <string name="moving">Перасоўванне</string>
   <string name="add">Дадаць</string>
-  <string name="tab">Укладка</string>
+  <string name="tab">Закладка</string>
   <string name="file">Файл</string>
   <string name="folder">Тэчка</string>
   <string name="newfolder">Новая тэчка</string>
@@ -83,10 +83,10 @@
   <string name="guide1">Сардэчна запрашаем у Amaze File Manager</string>
   <string name="guide2">Націсніце на сінюю палоску, каб паказаць ці схаваць панэль</string>
   <string name="guide3">Націсніце і ўтрымлівайце любы файл, каб адкрыць больш опцый</string>
-  <string name="guide4">Капіяванне, перасоўванне, ўласцівасці і г.д.</string>
+  <string name="guide4">Капіяванне, перасоўванне, уласцівасці і г.д.</string>
   <string name="guide5">Выкарыстоўвайце кнопку \"Назад\" вашай прылады, каб у любы час выйсці з прыкладання&#8230;</string>
   <string name="guide6">..і для навігацыі па файлаваму мэнэджэру, выкарыстоўвайце кнопку са стрэлкай налева</string>
-  <string name="maintab">Галоўная ўкладка не можа быць выдалена</string>
+  <string name="maintab">Галоўная закладка не можа быць выдалена</string>
   <string name="openparent">Адкрыць бацькоўскую дырэкторыю</string>
   <string name="openwith">Адкрыць з дапамогай</string>
   <string name="share">Падзяліцца</string>
@@ -247,7 +247,7 @@
   <string name="saving">Захаванне</string>
   <string name="packageinstaller">Усталёўшчык пакетаў</string>
   <string name="view">Прагляд</string>
-  <string name="install">Устанавіць</string>
+  <string name="install">Усталяваць</string>
   <string name="archive">Архіў</string>
   <string name="archtext">Гэта архіў. Якое дзеянне вы хацелі б выканаць?</string>
   <string name="pitext">Гэта усталёвачны пакет. Якое дзеянне вы хацелі б выканаць?</string>
