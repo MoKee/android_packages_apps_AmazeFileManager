@@ -383,7 +383,6 @@
   <string name="path">Шлях</string>
   <string name="renamebookmark">Змінити закладку</string>
   <string name="cut">Вирізати</string>
-  <string name="empty"></string>
   <string name="search">Пошук</string>
   <string name="invalid_name">Неприпустиме ім\'я</string>
   <string name="search_hint">Введіть текст для пошуку&#8230;</string>
@@ -460,7 +459,7 @@
                     <p style="margin-left: 40px">
                         Open Command Prompt. Type \'ipconfig\' and press Enter. Look for Default Gateway
                         under your network adapter for your router\'s IP address. Look for
-                        \\"IPv4 Address\\" under the same adapter section to find your computer\'s IP
+                        \"IPv4 Address\" under the same adapter section to find your computer\'s IP
                         address.\n\n
                     </p>
 

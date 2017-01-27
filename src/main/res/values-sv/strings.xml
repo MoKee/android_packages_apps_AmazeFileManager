@@ -54,7 +54,6 @@
   <string name="password">Lösenord</string>
   <string name="defualt">Standard</string>
   <string name="path">Sökväg</string>
-  <string name="empty"></string>
   <!-- reference to file accessed date -->
   <!-- reference to file modified date -->
   <string name="duration">Varaktighet</string>

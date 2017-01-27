@@ -373,7 +373,6 @@
   <string name="path">パス</string>
   <string name="renamebookmark">ブックマークを更新</string>
   <string name="cut">切り取り</string>
-  <string name="empty"></string>
   <string name="search">検索</string>
   <string name="invalid_name">無効な名前</string>
   <string name="search_hint">検索する種類&#8230;</string>

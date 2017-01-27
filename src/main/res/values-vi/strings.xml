@@ -328,7 +328,6 @@
   <string name="path">Đường dẫn</string>
   <string name="renamebookmark">Tùy chỉnh Bookmark</string>
   <string name="cut">Cắt</string>
-  <string name="empty"></string>
   <string name="search">Tìm kiếm</string>
   <string name="invalid_name">Tên không hợp lệ</string>
   <string name="search_hint">Gõ để tìm kiếm&#8230;</string>

@@ -366,7 +366,6 @@
   <string name="path">Caminho</string>
   <string name="renamebookmark">Modificar marcador</string>
   <string name="cut">Cortar</string>
-  <string name="empty"></string>
   <string name="search">Pesquisar</string>
   <string name="invalid_name">Nome inválido</string>
   <string name="search_hint">Digite para pesquisar&#8230;</string>

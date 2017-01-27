@@ -360,7 +360,6 @@
   <string name="path">Pfad</string>
   <string name="renamebookmark">Lesezeichen ändern</string>
   <string name="cut">Ausschneiden</string>
-  <string name="empty"></string>
   <string name="search">Suchen</string>
   <string name="invalid_name">Ungültiger Name</string>
   <string name="search_hint">Eingeben zum Suchen&#8230;</string>

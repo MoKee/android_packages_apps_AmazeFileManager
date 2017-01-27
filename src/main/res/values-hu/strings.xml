@@ -377,7 +377,6 @@ Folytatja?</string>
   <string name="path">Hely</string>
   <string name="renamebookmark">Könyvjelző módosítása</string>
   <string name="cut">Kivágás</string>
-  <string name="empty"></string>
   <string name="search">Keresés</string>
   <string name="invalid_name">Érvénytelen név</string>
   <string name="search_hint">Írja be mit keres&#8230;</string>

@@ -370,7 +370,6 @@
   <string name="path">مسیر</string>
   <string name="renamebookmark">ویرایش نشانه گذاریها</string>
   <string name="cut">برش</string>
-  <string name="empty"></string>
   <string name="search">جستجو</string>
   <string name="invalid_name">نام غیر قابل قبول</string>
   <string name="search_hint">برای جستجو تایپ کنید&#8230;</string>

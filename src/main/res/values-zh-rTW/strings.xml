@@ -382,7 +382,6 @@
   <string name="path">路徑</string>
   <string name="renamebookmark">編輯書籤</string>
   <string name="cut">剪下</string>
-  <string name="empty"></string>
   <string name="search">搜尋</string>
   <string name="invalid_name">無效名稱</string>
   <string name="search_hint">輸入以搜尋&#8230;</string>
