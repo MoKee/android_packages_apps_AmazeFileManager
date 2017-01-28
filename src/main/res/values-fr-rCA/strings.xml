@@ -460,12 +460,14 @@
   <string name="dimensions">Dimensions</string>
   <string name="width">Largeur</string>
   <string name="height">Hauteur</string>
+  <string name="date_modified">Date de modification</string>
   <string name="creator">Créateur</string>
   <string name="date_taken">Date de prise</string>
   <string name="exposure_time">Durée d\'exposition</string>
   <string name="focal_length">Longueur focale</string>
   <string name="document">Document</string>
   <string name="author">Auteur</string>
+  <string name="keywords">Mots clés</string>
   <string name="producer">Producteur</string>
   <string name="format">Format</string>
   <string name="pages">Nombre de pages</string>
