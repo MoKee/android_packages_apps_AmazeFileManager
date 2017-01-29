@@ -196,19 +196,12 @@ public class TextReader extends BaseActivity implements TextWatcher, View.OnClic
         mInput = (EditText) findViewById(R.id.fname);
         scrollView=(ScrollView)findViewById(R.id.editscroll);
 
-
-        if (getIntent().getStringExtra("path") != null) {
-
-            // intent started internally
-            mFile = new File(getIntent().getStringExtra("path"));
-        } else if (getIntent().getData() != null) {
+        if (getIntent().getData() != null) {
             // getting uri from external source
             uri = getIntent().getData();
 
             mFile = new File(getIntent().getData().getPath());
         }
-
-        Log.d(getClass().getSimpleName(), mFile.getPath());
 
         String fileName;
 
@@ -399,11 +392,12 @@ public class TextReader extends BaseActivity implements TextWatcher, View.OnClic
             }
         }
 
-        if (BaseActivity.rootMode && cacheFile.exists() && outputStream == null){
+        if (BaseActivity.rootMode && outputStream == null) {
             // try loading stream associated using root
             try {
 
-                outputStream = new FileOutputStream(cacheFile);
+                if (cacheFile != null && cacheFile.exists())
+                    outputStream = new FileOutputStream(cacheFile);
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -411,7 +405,7 @@ public class TextReader extends BaseActivity implements TextWatcher, View.OnClic
             }
         }
 
-        if (uri != null && outputStream == null) {
+        if (outputStream == null) {
 
             if (parcelFileDescriptor != null) {
                 File descriptorFile = new File(GenericCopyUtil.PATH_FILE_DESCRIPTOR + parcelFileDescriptor.getFd());
@@ -682,8 +676,7 @@ public class TextReader extends BaseActivity implements TextWatcher, View.OnClic
             }
         }
 
-        if (uri != null && stream == null) {
-
+        if (stream == null) {
             // trying to get URI from intent action
             try {
                 // getting a writable file descriptor
@@ -847,7 +840,7 @@ public class TextReader extends BaseActivity implements TextWatcher, View.OnClic
 
                     // highlighting previous element in list
                     Map.Entry keyValueNew = (Map.Entry) nodes.get(--mCurrent).getKey();
-                    mInput.getText().setSpan(new BackgroundColorSpan(ContextCompat.getColor(this, R.color.search_text_highlight)),
+                    mInput.getText().setSpan(new BackgroundColorSpan(getResources().getColor(R.color.search_text_highlight)),
                             (Integer) keyValueNew.getKey(),
                             (Integer) keyValueNew.getValue(), Spanned.SPAN_INCLUSIVE_INCLUSIVE);
 
@@ -872,7 +865,7 @@ public class TextReader extends BaseActivity implements TextWatcher, View.OnClic
                     }
 
                     Map.Entry keyValueNew = (Map.Entry) nodes.get(++mCurrent).getKey();
-                    mInput.getText().setSpan(new BackgroundColorSpan(ContextCompat.getColor(this, R.color.search_text_highlight)),
+                    mInput.getText().setSpan(new BackgroundColorSpan(getResources().getColor(R.color.search_text_highlight)),
                             (Integer) keyValueNew.getKey(),
                             (Integer) keyValueNew.getValue(), Spanned.SPAN_INCLUSIVE_INCLUSIVE);
 

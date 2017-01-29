@@ -384,7 +384,7 @@ public class MainActivity extends BaseActivity implements OnRequestPermissionsRe
         }
 
         if (getAppTheme().equals(AppTheme.DARK)) {
-            mDrawerList.setBackgroundColor(ContextCompat.getColor(this, R.color.holo_dark_background));
+            mDrawerList.setBackgroundColor(getResources().getColor(R.color.holo_dark_background));
         }
         mDrawerList.setDivider(null);
         if (!isDrawerLocked) {
@@ -449,7 +449,7 @@ public class MainActivity extends BaseActivity implements OnRequestPermissionsRe
             shellInteractive = (new Shell.Builder()).useSU().setHandler(handler).open();
 
             // check for busybox
-            try {
+            /*try {
                 if (!RootUtils.isBusyboxAvailable()) {
                     Toast.makeText(this, getString(R.string.error_busybox), Toast.LENGTH_LONG).show();
                     closeInteractiveShell();
@@ -458,7 +458,7 @@ public class MainActivity extends BaseActivity implements OnRequestPermissionsRe
             } catch (RootNotPermittedException e) {
                 e.printStackTrace();
                 Sp.edit().putBoolean(PreferenceUtils.KEY_ROOT, false).apply();
-            }
+            }*/
         }
     }
 
@@ -1802,7 +1802,8 @@ public class MainActivity extends BaseActivity implements OnRequestPermissionsRe
         frameLayout = (FrameLayout) findViewById(R.id.content_frame);
         indicator_layout = findViewById(R.id.indicator_layout);
         mDrawerLinear = (ScrimInsetsRelativeLayout) findViewById(R.id.left_drawer);
-        if (getAppTheme().equals(AppTheme.DARK)) mDrawerLinear.setBackgroundColor(getColor(R.color.holo_dark_background));
+        if (getAppTheme().equals(AppTheme.DARK))
+            mDrawerLinear.setBackgroundColor(getResources().getColor(R.color.holo_dark_background));
         else mDrawerLinear.setBackgroundColor(Color.WHITE);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         //mDrawerLayout.setStatusBarBackgroundColor(Color.parseColor((currentTab==1 ? skinTwo : skin)));
