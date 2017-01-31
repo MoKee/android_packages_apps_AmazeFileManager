@@ -458,6 +458,7 @@
   <string name="album">Album</string>
   <string name="duration">Durée</string>
   <!-- reference to audio/video file -->
+  <string name="codec">Codec</string>
   <string name="dimensions">Dimensions</string>
   <string name="width">Largeur</string>
   <string name="height">Hauteur</string>
