@@ -368,7 +368,7 @@ public class MainActivity extends BaseActivity implements
 
             if (openprocesses) {
                 android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.content_frame, new ProcessViewer());
+                transaction.replace(R.id.content_frame, new ProcessViewer(), KEY_INTENT_PROCESS_VIEWER);
                 //   transaction.addToBackStack(null);
                 select = 102;
                 openprocesses = false;
@@ -1763,6 +1763,9 @@ public class MainActivity extends BaseActivity implements
 
             if (!isDrawerLocked) mDrawerLayout.closeDrawer(mDrawerLinear);
             else onDrawerClosed();
+        } else if (requestCode == REQUEST_CODE_SAF && responseCode != Activity.RESULT_OK) {
+            // otg access not provided
+            pending_path = null;
         }
     }
 
@@ -2572,7 +2575,7 @@ public class MainActivity extends BaseActivity implements
         } else if ((openprocesses = i.getBooleanExtra(KEY_INTENT_PROCESS_VIEWER, false))) {
 
             android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.content_frame, new ProcessViewer());
+            transaction.replace(R.id.content_frame, new ProcessViewer(), KEY_INTENT_PROCESS_VIEWER);
             //   transaction.addToBackStack(null);
             select = 102;
             openprocesses = false;
