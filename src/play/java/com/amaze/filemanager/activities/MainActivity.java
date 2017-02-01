@@ -368,7 +368,7 @@ public class MainActivity extends BaseActivity implements
 
             if (openprocesses) {
                 android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.content_frame, new ProcessViewer());
+                transaction.replace(R.id.content_frame, new ProcessViewer(), KEY_INTENT_PROCESS_VIEWER);
                 //   transaction.addToBackStack(null);
                 select = 102;
                 openprocesses = false;
@@ -469,7 +469,7 @@ public class MainActivity extends BaseActivity implements
             shellInteractive = (new Shell.Builder()).useSU().setHandler(handler).open();
 
             // check for busybox
-            try {
+            /*try {
                 if (!RootUtils.isBusyboxAvailable()) {
                     Toast.makeText(this, getString(R.string.error_busybox), Toast.LENGTH_LONG).show();
                     closeInteractiveShell();
@@ -478,7 +478,7 @@ public class MainActivity extends BaseActivity implements
             } catch (RootNotPermittedException e) {
                 e.printStackTrace();
                 Sp.edit().putBoolean(PreferenceUtils.KEY_ROOT, false).apply();
-            }
+            }*/
         }
     }
 
@@ -1763,6 +1763,9 @@ public class MainActivity extends BaseActivity implements
 
             if (!isDrawerLocked) mDrawerLayout.closeDrawer(mDrawerLinear);
             else onDrawerClosed();
+        } else if (requestCode == REQUEST_CODE_SAF && responseCode != Activity.RESULT_OK) {
+            // otg access not provided
+            pending_path = null;
         }
     }
 
@@ -1956,7 +1959,7 @@ public class MainActivity extends BaseActivity implements
         frameLayout = (FrameLayout) findViewById(R.id.content_frame);
         indicator_layout = findViewById(R.id.indicator_layout);
         mDrawerLinear = (ScrimInsetsRelativeLayout) findViewById(R.id.left_drawer);
-        if (getAppTheme().equals(AppTheme.DARK)) mDrawerLinear.setBackgroundColor(getColor(R.color.holo_dark_background));
+        if (getAppTheme().equals(AppTheme.DARK)) mDrawerLinear.setBackgroundColor(getResources().getColor(R.color.holo_dark_background));
         else mDrawerLinear.setBackgroundColor(Color.WHITE);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         //mDrawerLayout.setStatusBarBackgroundColor(Color.parseColor((currentTab==1 ? skinTwo : skin)));
@@ -2572,7 +2575,7 @@ public class MainActivity extends BaseActivity implements
         } else if ((openprocesses = i.getBooleanExtra(KEY_INTENT_PROCESS_VIEWER, false))) {
 
             android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.content_frame, new ProcessViewer());
+            transaction.replace(R.id.content_frame, new ProcessViewer(), KEY_INTENT_PROCESS_VIEWER);
             //   transaction.addToBackStack(null);
             select = 102;
             openprocesses = false;
