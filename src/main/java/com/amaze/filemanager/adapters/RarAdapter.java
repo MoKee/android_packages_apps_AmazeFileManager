@@ -311,7 +311,7 @@ public class RarAdapter extends RecyclerArrayAdapter<String, RecyclerView.ViewHo
             holder.date.setText(R.string.goback);
         }
         else {
-            holder.genericIcon.setImageDrawable(Icons.loadMimeIcon(zipViewer.getActivity(), rowItem.getName(), false,zipViewer.res));
+            holder.genericIcon.setImageDrawable(Icons.loadMimeIcon(rowItem.getName(), false,zipViewer.res));
             final StringBuilder stringBuilder = new StringBuilder(rowItem.getName());
             if (zipViewer.showLastModified)
                 holder.date.setText(Futils.getdate(rowItem.getTime(), zipViewer.year));
@@ -344,7 +344,7 @@ public class RarAdapter extends RecyclerArrayAdapter<String, RecyclerView.ViewHo
                         gradientDrawable.setColor(Color.parseColor("#f9a825"));
                     else if(Icons.isApk(rowItem.getName()))
                         gradientDrawable.setColor(Color.parseColor("#a4c439"));
-                    else if (Icons.isgeneric(rowItem.getName()))
+                    else if (Icons.isGeneric(rowItem.getName()))
                         gradientDrawable.setColor(Color.parseColor("#9e9e9e"));
                     else gradientDrawable.setColor(Color.parseColor(zipViewer.iconskin));
                 } else gradientDrawable.setColor(Color.parseColor(zipViewer.iconskin));
@@ -409,10 +409,12 @@ public class RarAdapter extends RecyclerArrayAdapter<String, RecyclerView.ViewHo
 
                         } else {
 
-                            String archiveDirPath = zipViewer.f.getPath().substring(0,
-                                    zipViewer.f.getPath().lastIndexOf("."));
+                            String fileName = zipViewer.f.getName().substring(0,
+                                    zipViewer.f.getName().lastIndexOf("."));
+                            String archiveCacheDirPath = zipViewer.getActivity().getExternalCacheDir().getPath() +
+                                    "/" + fileName;
 
-                            BaseFile file = new BaseFile(archiveDirPath + "/"
+                            BaseFile file = new BaseFile(archiveCacheDirPath + "/"
                                     + rowItem.getName().replaceAll("\\\\", "/"));
                             file.setMode(OpenMode.FILE);
                             // this file will be opened once service finishes up it's extraction
@@ -430,6 +432,8 @@ public class RarAdapter extends RecyclerArrayAdapter<String, RecyclerView.ViewHo
                             a.add(rowItem.getName());
                             intent.putExtra(ExtractService.KEY_PATH_ZIP, zipViewer.f.getPath());
                             intent.putExtra(ExtractService.KEY_ENTRIES_ZIP, a);
+                            intent.putExtra(ExtractService.KEY_PATH_EXTRACT,
+                                    zipViewer.getActivity().getExternalCacheDir().getPath());
                             ServiceWatcherUtil.runService(zipViewer.getContext(), intent);
                         }
                     }
@@ -455,7 +459,7 @@ public class RarAdapter extends RecyclerArrayAdapter<String, RecyclerView.ViewHo
 
         GradientDrawable gradientDrawable = (GradientDrawable) holder.genericIcon.getBackground();
 
-        holder.genericIcon.setImageDrawable(Icons.loadMimeIcon(zipViewer.getActivity(), rowItem.getFileNameString(), false,zipViewer.res));
+        holder.genericIcon.setImageDrawable(Icons.loadMimeIcon(rowItem.getFileNameString(), false,zipViewer.res));
         holder.txtTitle.setText(rowItem.getFileNameString().substring(rowItem.getFileNameString().lastIndexOf("\\") + 1));
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
@@ -482,7 +486,7 @@ public class RarAdapter extends RecyclerArrayAdapter<String, RecyclerView.ViewHo
                     gradientDrawable.setColor(Color.parseColor("#f9a825"));
                 else if(Icons.isApk(rowItem.getFileNameString()))
                     gradientDrawable.setColor(Color.parseColor("#a4c439"));
-                else if (Icons.isgeneric(rowItem.getFileNameString()))
+                else if (Icons.isGeneric(rowItem.getFileNameString()))
                     gradientDrawable.setColor(Color.parseColor("#9e9e9e"));
                 else gradientDrawable.setColor(Color.parseColor(zipViewer.iconskin));
             } else gradientDrawable.setColor(Color.parseColor(zipViewer.iconskin));
@@ -539,11 +543,15 @@ public class RarAdapter extends RecyclerArrayAdapter<String, RecyclerView.ViewHo
                                 (zipViewer.f);
 
                     } else {
-                        String archiveDirPath = zipViewer.f.getPath().substring(0, zipViewer.f.getPath().lastIndexOf("."));
+                        String fileName = zipViewer.f.getName().substring(0,
+                                zipViewer.f.getName().lastIndexOf("."));
+                        String archiveCacheDirPath = zipViewer.getActivity().getExternalCacheDir().getPath() +
+                                "/" + fileName;
 
-                        BaseFile file1 = new BaseFile(archiveDirPath + "/"
+                        BaseFile file1 = new BaseFile(archiveCacheDirPath + "/"
                                 + rowItem.getFileNameString().replaceAll("\\\\", "/"));
                         file1.setMode(OpenMode.FILE);
+
                         // this file will be opened once service finishes up it's extraction
                         zipViewer.files.add(file1);
                         // setting flag for binder to know
@@ -559,6 +567,8 @@ public class RarAdapter extends RecyclerArrayAdapter<String, RecyclerView.ViewHo
                         a.add(rowItem.getFileNameString());
                         intent.putExtra(ExtractService.KEY_PATH_ZIP, zipViewer.f.getPath());
                         intent.putExtra(ExtractService.KEY_ENTRIES_ZIP, a);
+                        intent.putExtra(ExtractService.KEY_PATH_EXTRACT,
+                                zipViewer.getActivity().getExternalCacheDir().getPath());
                         ServiceWatcherUtil.runService(zipViewer.getContext(), intent);
                     }
                 }
