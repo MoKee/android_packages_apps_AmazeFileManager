@@ -33,14 +33,14 @@ ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_JACK_FLAGS := --multi-dex native
 endif
 
-LOCAL_MANIFEST_FILE := src/main/AndroidManifest.xml
-LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/src/play/AndroidManifest.xml
+LOCAL_MANIFEST_FILE := app/src/main/AndroidManifest.xml
+LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/app/src/play/AndroidManifest.xml
 
-LOCAL_SRC_FILES := $(call all-java-files-under, src/main)
-LOCAL_SRC_FILES += $(call all-java-files-under, src/play)
+LOCAL_SRC_FILES := $(call all-java-files-under, app/src/main)
+LOCAL_SRC_FILES += $(call all-java-files-under, app/src/play)
 
 LOCAL_RESOURCE_DIR := \
-    $(LOCAL_PATH)/src/main/res \
+    $(LOCAL_PATH)/app/src/main/res \
     frameworks/support/v7/appcompat/res \
     frameworks/support/v7/cardview/res \
     frameworks/support/v7/recyclerview/res \
